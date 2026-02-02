@@ -1,0 +1,9 @@
+-rw-r--r-- 1 sendhaane sendhaane 0 Feb  2 16:33 Task2.txt
+
+Command:
+	chmod g-w Task2.txt
+
+Use:
+	TO remove write permission for the group only
+
+	

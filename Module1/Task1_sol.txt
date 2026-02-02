@@ -1,0 +1,9 @@
+-rwxrwxr-x 1 sendhaane sendhaane 0 Feb  2 16:26 Task1.sh
+
+Command:
+
+chmod +x Task1.sh
+
+Use:
+
+Adds executable permission to user,gropu and others.

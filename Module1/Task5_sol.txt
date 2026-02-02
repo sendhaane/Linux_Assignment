@@ -1,0 +1,4 @@
+total 0
+-rw-rw-r-- 1 sendhaane sendhaane 0 Feb  2 16:45 file1
+-rw-rw-r-- 1 sendhaane sendhaane 0 Feb  2 16:45 file2
+-rw-rw-r-- 1 sendhaane sendhaane 0 Feb  2 16:45 file3
