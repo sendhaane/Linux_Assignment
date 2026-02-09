@@ -1,0 +1,8 @@
+Ps with high memory usage
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+sendhaa+    2001 12.4  7.2 6740572 367144 ?      Ssl  10:59   3:02 /usr/bin/gnome-shell
+
+command:
+	ps aux --sort=-%mem | head -n 2
+	sudo kill -9 2001
+

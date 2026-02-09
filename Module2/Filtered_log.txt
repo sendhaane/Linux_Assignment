@@ -1,0 +1,8 @@
+Output:
+ERROR: Unable to connect to the database.␋
+ERROR: Failed to fetch data from API endpoint '/users'.␋
+INFO: Maintenance mode activated.␋ERROR: 
+ERROR: Missing required parameter in the request.␋
+
+Command:
+	grep "ERROR" app.log | grep -v "DEBUG" > Filtered_log.txt

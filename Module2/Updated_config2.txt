@@ -1,0 +1,15 @@
+Output:
+server_name=127.0.0.1
+database_host=127.0.0.1
+database_port=5432
+
+api_endpoint=http://127.0.0.1:8080/api
+auth_service=http://127.0.0.1:9090/auth
+
+cache_server=127.0.0.1
+log_server=127.0.0.1
+
+
+Command:
+        sed 's/localhost/127.0.0.1/g' Config2.txt > Updated_config2.txt
+

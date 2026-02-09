@@ -1,0 +1,7 @@
+Output:
+10.0.2.2
+
+
+Command:
+	ip route |grep default | awk '{print $3}' | sort >Test5_sol.txt
+
