@@ -1,0 +1,6 @@
+# Ignore large input files
+input.txt
+Module4/input.txt
+*.pcap
+*.log
+
