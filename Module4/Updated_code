@@ -1,0 +1,38 @@
+#!/bin/bash
+
+input=$1
+output="output.txt"
+
+> "$output"
+
+
+frame=""
+wlan=""
+wlan_sub=""
+
+
+
+while IFS= read -r line; do
+
+
+        if [[ $line == frame.time* ]]; then
+                frame="$line"
+        fi
+
+        if [[ $line == wlan.fc.type* ]]; then
+                wlan="$line"
+        fi
+
+        if [[ $line == wlan.fc.subtype* ]]; then
+                wlan_sub="$line"
+        fi
+
+        if [[ -n "$frame" && -n "$wlan" && -n "$wlan_sub" ]]; then
+                echo "$frame | $wlan | $wlan_sub" >> "$output"
+                frame=""
+                wlan=""
+                wlan_sub=""
+        fi
+done < "$input"
+
+echo "success"
